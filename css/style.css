@@ -1,0 +1,8 @@
+.input-num::-webkit-inner-spin-button,
+.input-num::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+.input-num{
+  display: block;
+  width: 50vw;
+}
