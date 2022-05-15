@@ -2,7 +2,7 @@
 
 Hi 👋
 
-This is a solution to the [Solo Project - Unit Converter](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). 
+This is a solution to the [Solo Project - Unit Converter](https://scrimba.com/learn/learnjavascript/module-32-solo-project-unit-converter-c2g86PSZ). 
 
 If you liked my solution, give me 🌟. Thank you 😉
 
@@ -32,7 +32,7 @@ If you liked my solution, give me 🌟. Thank you 😉
 
 ## Link
 
-- [Live](https://irs-mp.github.io/social-proof/) 👀
+- [Live](https://irs-mp.github.io/unit-converter/) 👀
 
 ## Built with
 
