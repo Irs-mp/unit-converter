@@ -5,48 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unit Conversion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-dist.css">
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <main class="main">
-    <section class="main__header">
-      <h1 class="main__header--ttl">
-        Metric / Imperial Unit Conversion
-      </h1>
-      <input type="number" min="0" max="100" placeholder="Enter a number then press 'enter'" id="input-num" class="input-num">
-    </section>
-    <div class="main__body">
-      <section class="length">
-        <h2 class="subtitle">
-          Length (Meter / Feet)
-        </h2>
-        <p>
-          <span id="meter" class="meter">0</span> meter = <span id="meterToFeet" class="meterToFeet">0.000</span> feet | <span id="feet" class="feet">0</span> feet = <span id="feetToMeter" class="feetToMeter">0.000</span> meters
-        </p>
+    <div class="float">
+      <span class="info">🧐 Enter a number ✍ then press enter 😉</span>
+    </div>
+    <div class="card">
+      <section class="card__header">
+        <h1 class="title">
+          Metric / Imperial Unit Conversion
+        </h1>
+        <input type="number" min="0" max="100" id="input-num" class="input-num">
       </section>
-      <section class="volume">
-        <h2 class="subtitle">
-          Volume (Liters / Gallons)
-        </h2>
-        <p>
-          <span id="liter" class="liter">0</span> liters = <span id="literToGallon" class="literToGallon">0.000</span> gallons | <span id="gallon" class="gallon">0</span> gallons = <span id="gallonToLiter" class="gallonToLiter">0.000</span> liters
-        </p>
-      </section>
-      <section class="mass">
-        <h2 class="subtitle">
-          Mass (Kilograms / Pounds)
-        </h2>
-        <p>
-          <span id="kilo" class="kilo">0</span> kilos = <span id="kiloToPound" class="kiloToPound">0.000</span> pounds | <span id="pound" class="pound">0</span> pounds = <span id="poundToKilo" class="poundToKilo">0.000</span> kilos`
-        </p>
-      </section>
+      <div class="card__body">
+        <section class="length">
+          <h2 class="subtitle">
+            Length (Meter / Feet)
+          </h2>
+          <p class="copy">
+            <span id="meter" class="meter">0</span> meter = <span id="meterToFeet" class="meterToFeet">0.000</span> feet | <span id="feet" class="feet">0</span> feet = <span id="feetToMeter" class="feetToMeter">0.000</span> meters
+          </p>
+        </section>
+        <section class="volume">
+          <h2 class="subtitle">
+            Volume (Liters / Gallons)
+          </h2>
+          <p class="copy">
+            <span id="liter" class="liter">0</span> liters = <span id="literToGallon" class="literToGallon">0.000</span> gallons | <span id="gallon" class="gallon">0</span> gallons = <span id="gallonToLiter" class="gallonToLiter">0.000</span> liters
+          </p>
+        </section>
+        <section class="mass">
+          <h2 class="subtitle">
+            Mass (Kilograms / Pounds)
+          </h2>
+          <p class="copy">
+            <span id="kilo" class="kilo">0</span> kilos = <span id="kiloToPound" class="kiloToPound">0.000</span> pounds | <span id="pound" class="pound">0</span> pounds = <span id="poundToKilo" class="poundToKilo">0.000</span> kilos
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="button">
+      <button id="btn" class="btn" type="reset">Clean🗑️</button>
     </div>
   </main>
   <footer>
     <p class="attr">
-      Challenge by <a href="#" class="attr__lnk" target="_blank">Scrimba</a> - Creaded by <a href="#" class="attr__lnk" target="_blank">Irs</a> ♪
+      Challenge by <a href="https://scrimba.com/allcourses" class="attr__lnk" target="_blank">Scrimba</a> - Creaded by <a href="#" class="attr__lnk" target="_blank">Irs</a> ♪
     </p>
   </footer>
 </body>

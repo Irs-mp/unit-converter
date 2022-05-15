@@ -7,7 +7,9 @@ html{box-sizing: border-box;}
 
 body{
   min-height: 100vh;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr auto;
   grid-template-rows: 1fr auto;
   font-family: var(--inter);
   background-color: var(--bg-body);
@@ -24,11 +26,15 @@ body{
 }
 .main{
   position: relative;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
   place-self: center;
 }
 .float,
 .button{
   position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   left: 50%;
   font-size: 1.5rem;
@@ -64,6 +70,7 @@ body{
 .card__body{
   width: 100%;
   padding: 2rem 0 1.5rem;
+  display: -ms-grid;
   display: grid;
   gap: 1.3rem;
   background-color: var(--bg-card);

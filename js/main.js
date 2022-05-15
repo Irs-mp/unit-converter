@@ -12,6 +12,8 @@ const kiloToPound = document.getElementById('kiloToPound')
 const pound = document.getElementById('pound')
 const poundToKilo = document.getElementById('poundToKilo')
 
+const btn = document.getElementById('btn')
+
 window.addEventListener('load', () => {
   inputNum.focus()
 })
@@ -44,4 +46,22 @@ inputNum.addEventListener('keypress', (e) => {
     poundToKilo.textContent = (inputVal * 0.453592).toFixed(3)
   }
   }
+})
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault
+  inputNum.value = ''
+  meter.textContent = '0'
+  meterToFeet.textContent = '0.000'
+  feet.textContent = '0'
+  feetToMeter.textContent = '0.000'
+  liter.textContent = '0'
+  literToGallon.textContent = '0.000'
+  gallon.textContent = '0'
+  gallonToLiter.textContent = '0.000'
+  kilo.textContent = '0'
+  kiloToPound.textContent = '0.000'
+  pound.textContent = '0'
+  poundToKilo.textContent = '0.000'
+  inputNum.focus()
 })
